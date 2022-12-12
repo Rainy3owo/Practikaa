@@ -1,0 +1,108 @@
+﻿<Window x:Class="WpfApp7.Отель1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="Отель1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <FlowDocumentReader Margin="0,10,0,-10">
+                <FlowDocument>
+
+                    <Table CellSpacing="5">
+
+                        <Table.Columns>
+                            <TableColumn/>
+                            <TableColumn/>
+                            <TableColumn/>
+                            <TableColumn/>
+                        </Table.Columns>
+
+                        <TableRowGroup>
+
+                            <!-- Title row for the table. -->
+                            <TableRow Background="SkyBlue">
+                                <TableCell ColumnSpan="4" TextAlignment="Center">
+                                    <Paragraph FontSize="24pt" FontWeight="Bold">Отель</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <!-- Header row for the table. -->
+                            <TableRow Background="MediumPurple">
+                                <TableCell>
+                                    <Paragraph FontSize="14pt" FontWeight="Bold">Наименования отелей</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph FontSize="14pt" FontWeight="Bold">Стоимость размещения в отеле</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+
+
+                            <!-- Four data rows for the inner planets. -->
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>Вульверин</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>7800</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background="lightgray">
+                                <TableCell>
+                                    <Paragraph>БлюЛобстер</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>14999</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>Блекберри
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>30000</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Background="lightgray">
+
+                                <TableCell>
+                                    <Paragraph>АккорХотелс</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>57000</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+
+
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>Новотел</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>60000</Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+
+
+
+                        </TableRowGroup>
+                    </Table>
+                </FlowDocument>
+            </FlowDocumentReader>
+
+
+
+
+        </Grid>
+    </Grid>
+</Window>
